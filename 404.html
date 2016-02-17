@@ -24,14 +24,20 @@
 	<button onclick="goToCourses()">Having Trouble?</a>
 </body>
 <script>
+	var input = document.getElementById('input');
+	var result = document.getElementById('output');
+
 	function typing() {
-		var input = document.getElementById('input');
-		var result = document.getElementById('output');
+
     result.innerHTML = input.value;
 	}
 	function goToCourses(){
 		window.location.href = "http://appacademy.io/course";
 	}
+
+
+	input.value = result.innerHTML = "<p>Go on, it's not that hard.</p>"
+
 
 </script>
 </html>
