@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="./404.js"></script>
+	<link rel="stylesheet" type="text/css" href="./404.css">
+</head>
+<body>
+	<a  class="clear" href="http://appacademy.io">
+		<img class="logo" src="logo-full-white.svg"/>
+	</a>
+	<header>
+		<h1>Page Not Found</h1>
+		<p>We couldn't find the page you requested.
+		Maybe you should write it yourself.</p>
+	</header>
+	<section class="window clear">
+		<section class="terminal">
+			<textarea id="input" type="textarea" onkeyup="typing()"></textarea>
+		</section>
+		<section class="terminal" id="output">
+		</section>
+	</section>
+	<footer>
+		<form action="http://www.appacademy.io/course">
+    	<input type="submit" value="Having Trouble?">
+		</form>
+	</footer>
+</body>
+<script>
+	function typing() {
+		var input = document.getElementById('input');
+		var result = document.getElementById('output');
+    result.innerHTML = input.value;
+	}
+</script>
+
+</script>
+</html>

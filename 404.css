@@ -1,0 +1,66 @@
+body { 
+  background: url(note.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+	font-family: "aktiv-grotesk", sans-serif;
+	color: white;
+	text-align: center;
+}
+
+form {
+	margin: 10px;
+}
+
+header {
+	width: 50%;
+	margin: auto;
+}
+
+footer {
+	width: 50%;
+	margin: auto;
+}
+
+.window {
+	width: 100wn;
+	margin: auto;
+}
+
+.terminal {
+	width: 40%;
+	float: left;
+	margin: 10px;
+	height: 400px;
+	padding: 0px;
+	border: solid red 4px;
+	border-radius: 1%;
+	clear: none;
+	display:inline; 
+	background: rgba(128,128,128, .3);
+}
+
+#input {
+	height:100%;
+	width: 100%;
+	background: rgba(128,128,128, .3);
+	border: 0px;
+	resize: none;
+}
+
+.clear:after {
+	width: 400px;
+  content: "";
+  display: block;
+  clear: both;
+  margin: auto;
+}
+
+.logo{
+	position: relative;
+	height: 50px;
+	width: 150px;
+}
+
