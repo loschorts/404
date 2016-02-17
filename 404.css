@@ -25,14 +25,16 @@ footer {
 }
 
 .window {
-	width: 100wn;
+	width: 100%;
 	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .terminal {
-	width: 40%;
-	float: left;
-	margin: 10px;
+	width: 45%;
+	margin: 0px 10px;
 	height: 400px;
 	padding: 0px;
 	border: solid red 4px;
@@ -48,6 +50,10 @@ footer {
 	background: rgba(128,128,128, .3);
 	border: 0px;
 	resize: none;
+}
+
+#output {
+	overflow: scroll;
 }
 
 .clear:after {
