@@ -11,7 +11,10 @@ body {
 }
 
 form {
-	margin: 10px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;	
 }
 
 header {
@@ -20,32 +23,36 @@ header {
 }
 
 footer {
-	width: 50%;
-	margin: auto;
-}
-
-.window {
 	width: 100%;
-	margin: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
+.window {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
 .terminal {
-	width: 45%;
-	margin: 0px 10px;
+	width: 50%;
+	margin: 10px 20px;
 	height: 400px;
 	padding: 0px;
 	border: solid red 4px;
 	border-radius: 1%;
-	clear: none;
-	display:inline; 
 	background: rgba(128,128,128, .3);
 }
 
 #input {
-	height:100%;
+	margin: auto;
+	height: 100%;
 	width: 100%;
 	background: rgba(128,128,128, .3);
 	border: 0px;
@@ -57,7 +64,6 @@ footer {
 }
 
 .clear:after {
-	width: 400px;
   content: "";
   display: block;
   clear: both;
@@ -69,4 +75,3 @@ footer {
 	height: 50px;
 	width: 150px;
 }
-

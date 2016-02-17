@@ -16,18 +16,12 @@
 	</header>
 	<section class="window clear">
 		<section class="terminal">
-			<textarea id="input" type="textarea" onkeyup="typing()">
-				try typing here
-			</textarea>
+			<textarea id="input" type="textarea" onkeyup="typing()"></textarea>
 		</section>
 		<section class="terminal" id="output">
 		</section>
 	</section>
-	<footer>
-		<form action="http://www.appacademy.io/course">
-    	<input type="submit" value="Having Trouble?">
-		</form>
-	</footer>
+	<button onclick="goToCourses()">Having Trouble?</a>
 </body>
 <script>
 	function typing() {
@@ -35,7 +29,9 @@
 		var result = document.getElementById('output');
     result.innerHTML = input.value;
 	}
-</script>
+	function goToCourses(){
+		window.location.href = "http://appacademy.io/course";
+	}
 
 </script>
 </html>
